@@ -1,0 +1,4 @@
+*.json
+letsencrypt/
+code/
+docker-compose.yml
