@@ -13,7 +13,7 @@ services:
             - "--entrypoints.web.address=:80"
             - "--entrypoints.websecure.address=:443"
             - "--certificatesresolvers.mytlschallenge.acme.tlschallenge=true" # <== Enable TLS-ALPN-01 to generate and renew ACME certs
-            - "--certificatesresolvers.mytlschallenge.acme.email=<your_email" # <== Setting email for certs
+            - "--certificatesresolvers.mytlschallenge.acme.email=<your_email>" # <== Setting email for certs
             - "--certificatesresolvers.mytlschallenge.acme.storage=/letsencrypt/acme.json" # <== Defining acme file to store cert information
         ports:
             - "80:80"
